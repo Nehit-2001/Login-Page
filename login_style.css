@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(133, 242, 211);
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.main{
+    background: white;
+    width: 400px;
+    border-radius: 9px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.main h2{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.main form{
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+form .login_field{
+    margin: 30px 0;
+    position: relative;
+    border-bottom: 1px solid #adadad;
+}
+.login_field input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.login_field label{
+    color: #adadad;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 5px;
+    transition: .6s;
+    font-size: 14px;
+    pointer-events: none;
+    
+}
+.login_field span::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s ;
+}
+.login_field input:valid ~ label,
+.login_field input:focus ~ label{
+    bottom: -33px;
+    color: #2691d9;
+}
+.login_field input:focus ~ span::before,
+.login_field input:valid ~ span::before{
+    width: 100%;
+}
+.forget_password{
+    margin: -5px 0 20px 13px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+.forget_password:hover{
+    text-decoration: underline;
+    color: rgb(133, 242, 211);
+}
+input[type="submit"]{
+    background: rgb(133, 242, 211);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid;
+    align-content: centerd;
+    margin: 20px 0 20px 110px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 100px;
+    font-size: 14px;
+    color: rgb(54, 49, 49);
+}
+input[type="submit"]:hover{
+    border: rgb(133, 242, 211);
+    transition: .6s;
+}
+.r_link{
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #adadad;
+}
+.r_link a{
+    text-decoration: none;
+    color: rgb(133, 242, 211)
+}
+.r_link a:hover{
+    text-decoration: underline;
+}
+

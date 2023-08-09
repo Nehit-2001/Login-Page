@@ -58,7 +58,7 @@ form .login_field{
     width: 0%;
     height: 2px;
     background: #2691d9;
-    transition: .5s ;
+    transition: .6s ;
 }
 .login_field input:valid ~ label,
 .login_field input:focus ~ label{
